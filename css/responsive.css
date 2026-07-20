@@ -60,9 +60,10 @@
   }
   
   .nav-links {
+    display: none;
     position: fixed;
     top: var(--header-height);
-    right: -100%;
+    right: 0;
     width: 280px;
     height: calc(100vh - var(--header-height));
     background-color: var(--bg-secondary);
@@ -70,12 +71,15 @@
     flex-direction: column;
     padding: 40px 30px;
     gap: 24px;
-    transition: right var(--transition-normal);
     z-index: 99;
+    /* Slide in from right */
+    transform: translateX(100%);
+    transition: transform var(--transition-normal);
   }
   
   .nav-links.active {
-    right: 0;
+    display: flex;
+    transform: translateX(0);
   }
   
   .nav-links a {
