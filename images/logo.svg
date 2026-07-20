@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" role="img" aria-label="Amazing Media Uganda Logo">
+  <title>Amazing Media Uganda</title>
+
+  <!-- ===== RED PLAY / SPEECH BUBBLE SHAPE ===== -->
+  <!--
+    Shape: a bold "D"-like form with a notch cut at bottom-left to form a tail,
+    and a right-pointing tip. Mirrors the original logo's red element.
+  -->
+  <path d="
+    M 8,8
+    L 8,68
+    L 34,68
+    L 50,88
+    L 50,68
+    L 72,68
+    L 72,8
+    Z
+  " fill="#E3000E"/>
+
+  <!-- White play triangle inside red shape -->
+  <polygon points="24,24 24,58 58,41" fill="#FFFFFF"/>
+
+  <!-- ===== BLACK VINTAGE FILM CAMERA ===== -->
+  <!-- Camera main body -->
+  <rect x="50" y="18" width="62" height="48" rx="4" fill="#111111"/>
+
+  <!-- Viewfinder window (white rectangle on camera face) -->
+  <rect x="58" y="27" width="30" height="30" rx="2" fill="#FFFFFF"/>
+  <!-- Inner lens circle -->
+  <circle cx="73" cy="42" r="10" fill="#111111"/>
+  <!-- Lens highlight dot -->
+  <circle cx="76" cy="39" r="3" fill="#333333"/>
+
+  <!-- Small circular button on right of camera body -->
+  <circle cx="101" cy="42" r="4.5" fill="#FFFFFF" opacity="0.6"/>
+
+  <!-- Camera viewfinder / lens cone on right side -->
+  <polygon points="112,26 128,33 128,51 112,58" fill="#111111"/>
+
+  <!-- === FILM REELS on top === -->
+  <!-- Left reel (smaller) -->
+  <circle cx="64" cy="18" r="11" fill="#111111"/>
+  <circle cx="64" cy="18" r="7"  fill="#2a2a2a"/>
+  <circle cx="64" cy="18" r="3"  fill="#111111"/>
+
+  <!-- Right reel (larger) -->
+  <circle cx="90" cy="14" r="15" fill="#111111"/>
+  <circle cx="90" cy="14" r="9"  fill="#2a2a2a"/>
+  <circle cx="90" cy="14" r="4"  fill="#111111"/>
+
+  <!-- ===== WORDMARK TEXT ===== -->
+  <text
+    x="70"
+    y="96"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-size="12.5"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    letter-spacing="0.3"
+  >Amazing Media Uganda</text>
+
+</svg>

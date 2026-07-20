@@ -177,28 +177,31 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-family: var(--font-title);
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #ffffff;
+  gap: 0;
 }
 
-.logo span {
-  color: var(--primary);
+.logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  /* Show real logo colors (red + black) with a subtle drop shadow for depth */
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.5));
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.logo-icon {
-  width: 36px;
-  height: 36px;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000000;
-  font-weight: 800;
-  font-size: 1.2rem;
+.logo:hover .logo-img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 2px 8px rgba(227,0,14,0.4)) brightness(1.08);
+}
+
+/* Footer logo — slightly smaller */
+footer .logo-img {
+  height: 44px;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.4));
+}
+
+footer .logo:hover .logo-img {
+  filter: drop-shadow(0 2px 8px rgba(227,0,14,0.35)) brightness(1.05);
 }
 
 .nav-links {
