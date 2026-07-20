@@ -1,0 +1,204 @@
+/* Responsive CSS stylesheet for Amazing Media Uganda v1.0 */
+
+/* --- Medium Devices (Tablets, 1024px and down) --- */
+@media screen and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .about-split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .about-image-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/* --- Small Devices (Tablets, 768px and down) --- */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  
+  .section-alt {
+    padding: 60px 0;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .hero {
+    padding: 120px 0 80px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Navigation Menu Transition to Mobile Drawer */
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 280px;
+    height: calc(100vh - var(--header-height));
+    background-color: var(--bg-secondary);
+    border-left: 1px solid var(--border-color);
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 24px;
+    transition: right var(--transition-normal);
+    z-index: 99;
+  }
+  
+  .nav-links.active {
+    right: 0;
+  }
+  
+  .nav-links a {
+    font-size: 1.1rem;
+    display: block;
+    width: 100%;
+  }
+  
+  /* Live stream grid adapts */
+  .livestream-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .livestream-details {
+    padding: 24px;
+  }
+  
+  /* Event date alignment */
+  .event-date-badge {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .event-date-day {
+    font-size: 1.2rem;
+  }
+  
+  .event-date-month {
+    font-size: 0.65rem;
+  }
+
+  /* Form spacing */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  /* Lightbox controls shift */
+  .lightbox-prev {
+    left: -40px;
+  }
+  
+  .lightbox-next {
+    right: -40px;
+  }
+}
+
+/* --- Extra Small Devices (Phones, 480px and down) --- */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .btn-group {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .video-grid, .events-list, .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-badge-overlay {
+    bottom: -10px;
+    right: -10px;
+    padding: 12px;
+  }
+  
+  .about-badge-number {
+    font-size: 1.8rem;
+  }
+  
+  .contact-form-wrapper {
+    padding: 24px 16px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .footer-bottom-links {
+    justify-content: center;
+  }
+  
+  /* Lightbox navigation adjustments */
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .lightbox-prev {
+    left: 10px;
+    background: rgba(11, 15, 25, 0.8);
+  }
+  
+  .lightbox-next {
+    right: 10px;
+    background: rgba(11, 15, 25, 0.8);
+  }
+  
+  .lightbox-content-wrapper {
+    max-width: 95%;
+  }
+}

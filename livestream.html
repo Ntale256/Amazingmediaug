@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Stream Broadcast | Amazing Media Uganda</title>
+  <meta name="description" content="Watch our live services online, find our broadcasting schedule, and join in prayer and online fellowship with us.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .page-header {
+      padding: 100px 0 60px 0;
+      background: linear-gradient(180deg, rgba(11, 15, 25, 0.4) 0%, var(--bg-primary) 100%),
+                  radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+      text-align: center;
+    }
+    
+    .page-header h1 {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+    
+    .page-header p {
+      color: var(--text-secondary);
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .stream-layout {
+      display: grid;
+      grid-template-columns: 2.2fr 1fr;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    
+    .main-player-card {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    
+    .main-player-wrapper {
+      position: relative;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      background-color: #000000;
+    }
+    
+    .main-player-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .main-player-info {
+      padding: 30px;
+    }
+    
+    .main-player-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+    
+    .main-player-info p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+    
+    .interactive-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .sidebar-widget {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 24px;
+    }
+    
+    .sidebar-widget h3 {
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+    
+    .connect-link-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 12px;
+      transition: all var(--transition-fast);
+      font-weight: 500;
+    }
+    
+    .connect-link-btn:last-child {
+      margin-bottom: 0;
+    }
+    
+    .connect-link-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background-color: var(--primary-glow);
+    }
+    
+    .connect-link-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+    
+    @media screen and (max-width: 992px) {
+      .stream-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">✝</div>
+        Amazing Media<span>.ug</span>
+      </a>
+      
+      <!-- Mobile Burger Menu -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="livestream.html" class="active">Livestream</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="badge badge-gold">Sunday Morning Celebration</span>
+      <h1>Join the Livestream</h1>
+      <p>Stream our services, pray together, and fellowship with believers from anywhere in the world.</p>
+    </div>
+  </section>
+
+  <!-- Main Livestream Workspace -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="stream-layout">
+        <!-- Player -->
+        <div class="main-player-card">
+          <div class="main-player-wrapper">
+            <!-- Livestream Player (points to live sermon/worship source) -->
+            <iframe src="https://www.youtube.com/embed/nQWFzMvCfLE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="main-player-info">
+            <div class="live-indicator">
+              <span class="live-dot"></span> Online Broadcast
+            </div>
+            <h2>Amazing Sunday Praise & Worship Service</h2>
+            <p>Welcome to our online church family. Prepare your hearts for a time of praise, worship, and an encouraging word from Pastor Samuel Mukasa. Feel free to connect, request prayers, and interact using the options on the right.</p>
+          </div>
+        </div>
+
+        <!-- Interactive Sidebar Widget -->
+        <div class="interactive-sidebar">
+          <!-- Connect widget -->
+          <div class="sidebar-widget">
+            <h3>Fellowship & Community</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">Engage with other believers online and join our interactive fellowship chat groups.</p>
+            
+            <a href="#" class="connect-link-btn" target="_blank">
+              <!-- WhatsApp Icon SVG -->
+              <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.903-6.99-1.871-1.873-4.35-2.906-6.991-2.907-5.439 0-9.865 4.42-9.869 9.865-.001 1.748.497 3.454 1.442 4.962l-.995 3.633 3.73-.978zm11.45-6.837c-.314-.157-1.86-.92-2.148-1.025-.29-.105-.5-.157-.712.157-.21.314-.816 1.024-1 1.233-.183.21-.366.236-.68.079-.313-.157-1.325-.488-2.524-1.558-.933-.833-1.564-1.862-1.747-2.177-.183-.314-.02-.485.137-.642.142-.141.314-.366.47-.55.158-.183.21-.314.314-.524.105-.21.053-.393-.026-.55-.079-.157-.712-1.717-.975-2.35-.257-.618-.518-.535-.712-.545-.183-.01-.393-.01-.603-.01-.21 0-.55.079-.838.393-.29.314-1.1.995-1.1 2.427 0 1.432 1.037 2.818 1.182 3.01.147.194 2.04 3.118 4.943 4.373.69.298 1.23.477 1.65.612.693.22 1.325.19 1.824.115.557-.084 1.86-.76 2.122-1.457.262-.697.262-1.297.183-1.422-.079-.126-.29-.21-.603-.368z"/></svg>
+              Join WhatsApp Fellowship Group
+            </a>
+            <a href="#" class="connect-link-btn" target="_blank">
+              <!-- Discord icon SVG -->
+              <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.873-.894.077.077 0 0 1-.008-.128c.126-.093.252-.19.372-.287a.075.075 0 0 1 .077-.011c3.92 1.793 8.18 1.793 12.061 0a.073.073 0 0 1 .078.009c.12.099.246.196.373.289a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.156 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.156 2.418z"/></svg>
+              Join Ministry Discord
+            </a>
+          </div>
+
+          <!-- Prayer widget -->
+          <div class="sidebar-widget">
+            <h3>Immediate Prayer Line</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">If you need someone to pray with you right now, call our intercession team:</p>
+            <a href="tel:+256700000000" class="btn btn-primary" style="width: 100%; display: flex; gap: 8px;">
+              <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              +256 700 000 000
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Schedule -->
+      <div class="sidebar-widget" style="margin-bottom: 60px;">
+        <h3 style="font-size: 1.4rem;">Weekly Broadcast Schedule</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 20px;">All broadcast times are set in East Africa Time (GMT+3). Add these to your calendar so you don't miss out.</p>
+        
+        <table style="width: 100%; border-collapse: collapse; text-align: left;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--border-color); color: #ffffff;">
+              <th style="padding: 12px 10px; font-family: var(--font-title); font-size: 1.1rem;">Service Program</th>
+              <th style="padding: 12px 10px; font-family: var(--font-title); font-size: 1.1rem;">Day</th>
+              <th style="padding: 12px 10px; font-family: var(--font-title); font-size: 1.1rem;">Time (EAT)</th>
+            </tr>
+          </thead>
+          <tbody style="color: var(--text-secondary); font-size: 0.95rem;">
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 14px 10px; color: #ffffff; font-weight: 500;">Sunday Praise & Worship Service</td>
+              <td style="padding: 14px 10px;">Sunday</td>
+              <td style="padding: 14px 10px; color: var(--primary);">09:00 AM - 11:15 AM</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 14px 10px; color: #ffffff; font-weight: 500;">Sunday Celebration Service</td>
+              <td style="padding: 14px 10px;">Sunday</td>
+              <td style="padding: 14px 10px; color: var(--primary);">11:30 AM - 01:30 PM</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 14px 10px; color: #ffffff; font-weight: 500;">Mid-Week Bible Exegesis</td>
+              <td style="padding: 14px 10px;">Wednesday</td>
+              <td style="padding: 14px 10px; color: var(--primary);">06:00 PM - 07:30 PM</td>
+            </tr>
+            <tr>
+              <td style="padding: 14px 10px; color: #ffffff; font-weight: 500;">Friday Night Breakthrough Intercession</td>
+              <td style="padding: 14px 10px;">Friday</td>
+              <td style="padding: 14px 10px; color: var(--primary);">08:00 PM - 10:30 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Previous Broadcasts Section -->
+      <div>
+        <div class="section-header">
+          <span class="badge">Archived Broadcasts</span>
+          <h2>Watch Previous Sermons</h2>
+          <p>Missed a livestream? Browse recent weekly worship sessions and theological teachings below.</p>
+        </div>
+        
+        <div class="video-grid">
+          <!-- Sermon 1 -->
+          <div class="video-card">
+            <div class="video-thumbnail-wrapper" data-youtube-id="yRvFvSKFMQs">
+              <img class="video-thumbnail" src="https://img.youtube.com/vi/yRvFvSKFMQs/mqdefault.jpg" alt="Graves into Gardens Worship">
+              <div class="play-overlay">
+                <div class="play-button">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <div class="video-meta">
+                <span>Worship</span>
+                <span>•</span>
+                <span>June 2026</span>
+              </div>
+              <h3>Graves Into Gardens - Live Worship</h3>
+            </div>
+          </div>
+
+          <!-- Sermon 2 -->
+          <div class="video-card">
+            <div class="video-thumbnail-wrapper" data-youtube-id="9t1C3bZ2QhI">
+              <img class="video-thumbnail" src="https://img.youtube.com/vi/9t1C3bZ2QhI/mqdefault.jpg" alt="Billy Graham Sermon">
+              <div class="play-overlay">
+                <div class="play-button">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <div class="video-meta">
+                <span>Sermon</span>
+                <span>•</span>
+                <span>April 2026</span>
+              </div>
+              <h3>Finding Peace in a Turbulent World</h3>
+            </div>
+          </div>
+
+          <!-- Sermon 3 -->
+          <div class="video-card">
+            <div class="video-thumbnail-wrapper" data-youtube-id="1v_kH88Fh_w">
+              <img class="video-thumbnail" src="https://img.youtube.com/vi/1v_kH88Fh_w/mqdefault.jpg" alt="Tony Evans Sermon">
+              <div class="play-overlay">
+                <div class="play-button">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <div class="video-meta">
+                <span>Sermon</span>
+                <span>•</span>
+                <span>March 2026</span>
+              </div>
+              <h3>Overcoming Anxiety - Dr. Tony Evans</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">✝</div>
+          Amazing Media<span>.ug</span>
+        </a>
+        <p>Spreading the Gospel of Jesus Christ across Uganda and East Africa using media, technology, and faith.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.06v1.74c0 .57-.03 1.26-.1 2.06-.06.8-.15 1.43-.28 1.9-.17.6-.47 1.05-.87 1.37-.4.32-.93.52-1.6.61-.8.1-1.89.16-3.27.18-1.38.03-2.65.04-3.82.04h-1.6c-1.17 0-2.44-.01-3.82-.04-1.38-.02-2.47-.08-3.27-.18-.67-.09-1.2-.29-1.6-.61-.4-.32-.7-.77-.87-1.37-.13-.47-.22-1.1-.28-1.9-.06-.8-.1-1.49-.1-2.06v-1.74c0-.57.04-1.26.1-2.06.06-.8.15-1.43.28-1.9.17-.6.47-1.05.87-1.37.4-.32.93-.52 1.6-.61.8-.1 1.89-.16 3.27-.18C8.94 5.03 10.21 5 11.38 5h1.6c1.17 0 2.44.01 3.82.04 1.38.02 2.47.08 3.27.18.67.09 1.2.29 1.6.61.4.32.7.77.87 1.37z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m8.4 2.25a.75.75 0 0 1 .75.75.75.75 0 0 1-.75.75.75.75 0 0 1-.75-.75.75.75 0 0 1 .75-.75M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="livestream.html">Livestream</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Ministries</h4>
+        <ul class="footer-links">
+          <li><a href="videos.html">Sermons & Media</a></li>
+          <li><a href="events.html">Youth Fellowship</a></li>
+          <li><a href="about.html">Statement of Faith</a></li>
+          <li><a href="contact.html">Prayer Support</a></li>
+          <li><a href="events.html">Outreach Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <ul class="footer-contact-info">
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Plot 45, Kampala Road,<br>Kampala, Uganda
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            +256 700 000 000
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            info@amazingmedia.ug
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Amazing Media Uganda. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Links -->
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

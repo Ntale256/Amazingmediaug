@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos & Sermons | Amazing Media Uganda</title>
+  <meta name="description" content="Browse our library of Christian media, including live worship recordings, powerful gospel sermons, theological teachings, and choir performances.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .page-header {
+      padding: 100px 0 60px 0;
+      background: linear-gradient(180deg, rgba(11, 15, 25, 0.4) 0%, var(--bg-primary) 100%),
+                  radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+      text-align: center;
+    }
+    
+    .page-header h1 {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+    
+    .page-header p {
+      color: var(--text-secondary);
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* Category Filter Tags */
+    .filter-container {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+      padding: 10px 20px;
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      border-radius: var(--radius-full);
+      font-family: var(--font-title);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+    
+    .filter-btn:hover {
+      border-color: var(--border-color-light);
+      color: #ffffff;
+    }
+    
+    .filter-btn.active {
+      background-color: var(--primary);
+      border-color: var(--primary);
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">✝</div>
+        Amazing Media<span>.ug</span>
+      </a>
+      
+      <!-- Mobile Burger Menu -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="videos.html" class="active">Videos</a></li>
+        <li><a href="livestream.html">Livestream</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="badge">Spiritual Library</span>
+      <h1>Videos & Sermons</h1>
+      <p>Nourish your faith with praise songs, biblical teachings, and inspiring testimonies from Uganda.</p>
+    </div>
+  </section>
+
+  <!-- Media Library Grid -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <!-- Media Filters -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All Videos</button>
+        <button class="filter-btn" data-filter="worship">Praise & Worship</button>
+        <button class="filter-btn" data-filter="sermon">Teachings & Sermons</button>
+        <button class="filter-btn" data-filter="choir">Choir & Devotional</button>
+      </div>
+      
+      <div class="video-grid" id="mediaLibraryGrid">
+        <!-- Video 1: Hillsong Worship -->
+        <div class="video-card" data-category="worship">
+          <div class="video-thumbnail-wrapper" data-youtube-id="nQWFzMvCfLE">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/nQWFzMvCfLE/mqdefault.jpg" alt="What a Beautiful Name Worship">
+            <div class="play-overlay">
+              <div class="play-button">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span>Worship</span>
+              <span>•</span>
+              <span>July 2026</span>
+            </div>
+            <h3>What A Beautiful Name - Worship Session</h3>
+            <p class="video-desc">A beautiful song celebrating the incomparable power and beauty of our Lord Jesus.</p>
+          </div>
+        </div>
+
+        <!-- Video 2: Elevation Worship -->
+        <div class="video-card" data-category="worship">
+          <div class="video-thumbnail-wrapper" data-youtube-id="yRvFvSKFMQs">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/yRvFvSKFMQs/mqdefault.jpg" alt="Graves into Gardens Worship">
+            <div class="play-overlay">
+              <div class="play-button">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span>Worship</span>
+              <span>•</span>
+              <span>June 2026</span>
+            </div>
+            <h3>Graves Into Gardens - Live Worship</h3>
+            <p class="video-desc">Celebrating God's resurrection power that brings life into the driest spaces.</p>
+          </div>
+        </div>
+
+        <!-- Video 3: Way Maker -->
+        <div class="video-card" data-category="worship">
+          <div class="video-thumbnail-wrapper" data-youtube-id="IEXY9aK98jI">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/IEXY9aK98jI/mqdefault.jpg" alt="Way Maker Worship">
+            <div class="play-overlay">
+              <div class="play-button">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span>Worship</span>
+              <span>•</span>
+              <span>May 2026</span>
+            </div>
+            <h3>Way Maker - Praise & Adoration</h3>
+            <p class="video-desc">An uplifting anthem to the miracle worker who walks with us through everything.</p>
+          </div>
+        </div>
+
+        <!-- Video 4: House of the Lord -->
+        <div class="video-card" data-category="choir">
+          <div class="video-thumbnail-wrapper" data-youtube-id="h9gG_HjWUPc">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/h9gG_HjWUPc/mqdefault.jpg" alt="House of the Lord Praise">
+            <div class="play-overlay">
+              <div class="play-button">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span>Choir</span>
+              <span>•</span>
+              <span>April 2026</span>
+            </div>
+            <h3>House Of The Lord - Joyful Celebration</h3>
+            <p class="video-desc">Celebrating redemption with clapping, singing, and joy in God's presence.</p>
+          </div>
+        </div>
+
+        <!-- Video 5: Billy Graham Sermon -->
+        <div class="video-card" data-category="sermon">
+          <div class="video-thumbnail-wrapper" data-youtube-id="9t1C3bZ2QhI">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/9t1C3bZ2QhI/mqdefault.jpg" alt="Billy Graham Sermon">
+            <div class="play-overlay">
+              <div class="play-button">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span>Sermon</span>
+              <span>•</span>
+              <span>April 2026</span>
+            </div>
+            <h3>Finding Peace in a Turbulent World</h3>
+            <p class="video-desc">A classic evangelical teaching on securing lasting peace through faith in Christ.</p>
+          </div>
+        </div>
+
+        <!-- Video 6: Tony Evans Sermon -->
+        <div class="video-card" data-category="sermon">
+          <div class="video-thumbnail-wrapper" data-youtube-id="1v_kH88Fh_w">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/1v_kH88Fh_w/mqdefault.jpg" alt="Tony Evans Sermon">
+            <div class="play-overlay">
+              <div class="play-button">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span>Sermon</span>
+              <span>•</span>
+              <span>March 2026</span>
+            </div>
+            <h3>Overcoming Anxiety - Dr. Tony Evans</h3>
+            <p class="video-desc">Biblical strategy to overcome daily anxiety, fear, and worry by relying on God's sovereignty.</p>
+          </div>
+        </div>
+
+        <!-- Video 7: Amazing Grace -->
+        <div class="video-card" data-category="choir">
+          <div class="video-thumbnail-wrapper" data-youtube-id="Jbe7OruLk8I">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/Jbe7OruLk8I/mqdefault.jpg" alt="Amazing Grace Hymn">
+            <div class="play-overlay">
+              <div class="play-button">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span>Choir</span>
+              <span>•</span>
+              <span>March 2026</span>
+            </div>
+            <h3>Amazing Grace (My Chains Are Gone)</h3>
+            <p class="video-desc">A peaceful vocal hymnal arrangement praising our Savior for releasing our chains.</p>
+          </div>
+        </div>
+
+        <!-- Video 8: I Can Only Imagine -->
+        <div class="video-card" data-category="choir">
+          <div class="video-thumbnail-wrapper" data-youtube-id="YJxRLOKN5I4">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/YJxRLOKN5I4/mqdefault.jpg" alt="Devotional highlights">
+            <div class="play-overlay">
+              <div class="play-button">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span>Choir</span>
+              <span>•</span>
+              <span>Feb 2026</span>
+            </div>
+            <h3>I Can Only Imagine - Faith & Reflection</h3>
+            <p class="video-desc">Reflective and prayerful devotion focused on eternal salvation in heaven.</p>
+          </div>
+        </div>
+
+        <!-- Video 9: Oceans Hillsong -->
+        <div class="video-card" data-category="worship">
+          <div class="video-thumbnail-wrapper" data-youtube-id="dy9nWe9_xRY">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/dy9nWe9_xRY/mqdefault.jpg" alt="Oceans Worship Session">
+            <div class="play-overlay">
+              <div class="play-button">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span>Worship</span>
+              <span>•</span>
+              <span>Jan 2026</span>
+            </div>
+            <h3>Oceans (Where Feet May Fail) - Live</h3>
+            <p class="video-desc">A deep intimate prayer declaring absolute trust in God even in deep waters.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">✝</div>
+          Amazing Media<span>.ug</span>
+        </a>
+        <p>Spreading the Gospel of Jesus Christ across Uganda and East Africa using media, technology, and faith.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.06v1.74c0 .57-.03 1.26-.1 2.06-.06.8-.15 1.43-.28 1.9-.17.6-.47 1.05-.87 1.37-.4.32-.93.52-1.6.61-.8.1-1.89.16-3.27.18-1.38.03-2.65.04-3.82.04h-1.6c-1.17 0-2.44-.01-3.82-.04-1.38-.02-2.47-.08-3.27-.18-.67-.09-1.2-.29-1.6-.61-.4-.32-.7-.77-.87-1.37-.13-.47-.22-1.1-.28-1.9-.06-.8-.1-1.49-.1-2.06v-1.74c0-.57.04-1.26.1-2.06.06-.8.15-1.43.28-1.9.17-.6.47-1.05.87-1.37.4-.32.93-.52 1.6-.61.8-.1 1.89-.16 3.27-.18C8.94 5.03 10.21 5 11.38 5h1.6c1.17 0 2.44.01 3.82.04 1.38.02 2.47.08 3.27.18.67.09 1.2.29 1.6.61.4.32.7.77.87 1.37z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m8.4 2.25a.75.75 0 0 1 .75.75.75.75 0 0 1-.75.75.75.75 0 0 1-.75-.75.75.75 0 0 1 .75-.75M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="livestream.html">Livestream</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Ministries</h4>
+        <ul class="footer-links">
+          <li><a href="videos.html">Sermons & Media</a></li>
+          <li><a href="events.html">Youth Fellowship</a></li>
+          <li><a href="about.html">Statement of Faith</a></li>
+          <li><a href="contact.html">Prayer Support</a></li>
+          <li><a href="events.html">Outreach Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <ul class="footer-contact-info">
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Plot 45, Kampala Road,<br>Kampala, Uganda
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            +256 700 000 000
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            info@amazingmedia.ug
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Amazing Media Uganda. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Links -->
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
