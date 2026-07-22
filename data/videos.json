@@ -1,8 +1,65 @@
-﻿[
-  { "id": 1, "title": "What A Beautiful Name — Worship Session", "youtubeId": "nQWFzMvCfLE", "category": "worship", "date": "2026-07-10", "description": "A powerful time of worship praising the beautiful name of Jesus Christ.", "thumbnail": "https://img.youtube.com/vi/nQWFzMvCfLE/mqdefault.jpg" },
-  { "id": 2, "title": "Graves Into Gardens — Praise & Worship", "youtubeId": "xyBJZSBR_pM", "category": "worship", "date": "2026-07-05", "description": "Uplifting worship experience drawing from Elevation Worship.", "thumbnail": "https://img.youtube.com/vi/xyBJZSBR_pM/mqdefault.jpg" },
-  { "id": 3, "title": "The Power of Faith — Sunday Sermon", "youtubeId": "4K1q9Ntcr5g", "category": "sermon", "date": "2026-06-28", "description": "An inspiring message on the power of faith in the life of a believer.", "thumbnail": "https://img.youtube.com/vi/4K1q9Ntcr5g/mqdefault.jpg" },
-  { "id": 4, "title": "Understanding God's Grace — Bible Study", "youtubeId": "Vt9V3BzSQXY", "category": "bible-study", "date": "2026-06-21", "description": "Deep dive into God's grace and what it means for us today.", "thumbnail": "https://img.youtube.com/vi/Vt9V3BzSQXY/mqdefault.jpg" },
-  { "id": 5, "title": "Healthy Living by God's Design", "youtubeId": "dQw4w9WgXcQ", "category": "health", "date": "2026-06-15", "description": "Biblical principles of healthy living applied to modern life.", "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" },
-  { "id": 6, "title": "Family Values: Building on Christ", "youtubeId": "Vt9V3BzSQXY", "category": "family", "date": "2026-06-08", "description": "How to build a strong, Christ-centred family in today's world.", "thumbnail": "https://img.youtube.com/vi/Vt9V3BzSQXY/mqdefault.jpg" }
+[
+  {
+    "id": 1,
+    "title": "Gospel Sermons & Biblical Teachings",
+    "playlistId": "PL8UpeN2AnVrKK6hpy3KYVinJfeEsFP5fv",
+    "category": "sermon",
+    "date": "2026-07-20",
+    "description": "Inspiring, Bible-centered sermons and spiritual messages from Amazing Media Uganda.",
+    "thumbnail": "assets/images/bible_study.png"
+  },
+  {
+    "id": 2,
+    "title": "Live Praise & Worship Sessions",
+    "playlistId": "PL8UpeN2AnVrJg5mXSpOoqFqGcJU_kHdlO",
+    "category": "worship",
+    "date": "2026-07-18",
+    "description": "Anointing worship sessions, praise music, and spiritual adoration.",
+    "thumbnail": "assets/images/worship_night.png"
+  },
+  {
+    "id": 3,
+    "title": "Bible Studies & Spiritual Growth",
+    "playlistId": "PL8UpeN2AnVrKxK1eIP5MVjbV7BobEljnn",
+    "category": "bible-study",
+    "date": "2026-07-15",
+    "description": "Deep biblical studies and devotionals to strengthen your walk with God.",
+    "thumbnail": "assets/images/church_fellowship.png"
+  },
+  {
+    "id": 4,
+    "title": "Choir Performances & Gospel Music",
+    "playlistId": "PL8UpeN2AnVrI2_WZpqEvzqa4s7Q4Nxz9x",
+    "category": "choir",
+    "date": "2026-07-12",
+    "description": "Uplifting gospel choir songs and praise performances from Uganda.",
+    "thumbnail": "assets/images/choir_singing.png"
+  },
+  {
+    "id": 5,
+    "title": "Christian Health & Family Living",
+    "playlistId": "PL8UpeN2AnVrJ_fpN3PYGafjCNQwLO0NtY",
+    "category": "health",
+    "date": "2026-07-10",
+    "description": "Biblical principles of health, family life, and Christian living.",
+    "thumbnail": "assets/images/youth_gathering.png"
+  },
+  {
+    "id": 6,
+    "title": "Special Conferences & Livestreams",
+    "playlistId": "PLRgyT3ybs3GQ",
+    "category": "worship",
+    "date": "2026-07-05",
+    "description": "Live broadcast archives, youth conventions, and gospel conference highlights.",
+    "thumbnail": "assets/images/worship_night.png"
+  },
+  {
+    "id": 7,
+    "title": "Evangelism & Community Outreach",
+    "playlistId": "PLO4RXEj9XVko",
+    "category": "sermon",
+    "date": "2026-07-01",
+    "description": "Documentaries and media capturing village outreach, missions, and community charity.",
+    "thumbnail": "assets/images/community_outreach.png"
+  }
 ]

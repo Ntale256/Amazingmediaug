@@ -106,199 +106,131 @@
     <div class="container">
       <!-- Media Filters -->
       <div class="filter-container">
-        <button class="filter-btn active" data-filter="all">All Videos</button>
-        <button class="filter-btn" data-filter="worship">Praise & Worship</button>
+        <button class="filter-btn active" data-filter="all">All Playlists</button>
         <button class="filter-btn" data-filter="sermon">Teachings & Sermons</button>
-        <button class="filter-btn" data-filter="choir">Choir & Devotional</button>
+        <button class="filter-btn" data-filter="worship">Praise & Worship</button>
+        <button class="filter-btn" data-filter="bible-study">Bible Studies</button>
+        <button class="filter-btn" data-filter="choir">Choir Music</button>
+        <button class="filter-btn" data-filter="health">Health & Family</button>
       </div>
       
       <div class="video-grid" id="mediaLibraryGrid">
-        <!-- Video 1: Hillsong Worship -->
-        <div class="video-card" data-category="worship">
-          <div class="video-thumbnail-wrapper" data-youtube-id="nQWFzMvCfLE">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/nQWFzMvCfLE/mqdefault.jpg" alt="What a Beautiful Name Worship">
-            <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <div class="video-meta">
-              <span>Worship</span>
-              <span>•</span>
-              <span>July 2026</span>
-            </div>
-            <h3>What A Beautiful Name - Worship Session</h3>
-            <p class="video-desc">A beautiful song celebrating the incomparable power and beauty of our Lord Jesus.</p>
-          </div>
-        </div>
-
-        <!-- Video 2: Elevation Worship -->
-        <div class="video-card" data-category="worship">
-          <div class="video-thumbnail-wrapper" data-youtube-id="yRvFvSKFMQs">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/yRvFvSKFMQs/mqdefault.jpg" alt="Graves into Gardens Worship">
-            <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <div class="video-meta">
-              <span>Worship</span>
-              <span>•</span>
-              <span>June 2026</span>
-            </div>
-            <h3>Graves Into Gardens - Live Worship</h3>
-            <p class="video-desc">Celebrating God's resurrection power that brings life into the driest spaces.</p>
-          </div>
-        </div>
-
-        <!-- Video 3: Way Maker -->
-        <div class="video-card" data-category="worship">
-          <div class="video-thumbnail-wrapper" data-youtube-id="IEXY9aK98jI">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/IEXY9aK98jI/mqdefault.jpg" alt="Way Maker Worship">
-            <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <div class="video-meta">
-              <span>Worship</span>
-              <span>•</span>
-              <span>May 2026</span>
-            </div>
-            <h3>Way Maker - Praise & Adoration</h3>
-            <p class="video-desc">An uplifting anthem to the miracle worker who walks with us through everything.</p>
-          </div>
-        </div>
-
-        <!-- Video 4: House of the Lord -->
-        <div class="video-card" data-category="choir">
-          <div class="video-thumbnail-wrapper" data-youtube-id="h9gG_HjWUPc">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/h9gG_HjWUPc/mqdefault.jpg" alt="House of the Lord Praise">
-            <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <div class="video-meta">
-              <span>Choir</span>
-              <span>•</span>
-              <span>April 2026</span>
-            </div>
-            <h3>House Of The Lord - Joyful Celebration</h3>
-            <p class="video-desc">Celebrating redemption with clapping, singing, and joy in God's presence.</p>
-          </div>
-        </div>
-
-        <!-- Video 5: Billy Graham Sermon -->
+        <!-- Playlist 1: Gospel Sermons -->
         <div class="video-card" data-category="sermon">
-          <div class="video-thumbnail-wrapper" data-youtube-id="9t1C3bZ2QhI">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/9t1C3bZ2QhI/mqdefault.jpg" alt="Billy Graham Sermon">
+          <div class="video-thumbnail-wrapper" data-playlist-id="PL8UpeN2AnVrKK6hpy3KYVinJfeEsFP5fv">
+            <img class="video-thumbnail" src="assets/images/bible_study.png" alt="Gospel Sermons & Biblical Teachings">
             <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
             </div>
+            <span style="position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.8); color: var(--primary); font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-sm);">▶ PLAYLIST</span>
           </div>
           <div class="video-info">
-            <div class="video-meta">
-              <span>Sermon</span>
-              <span>•</span>
-              <span>April 2026</span>
-            </div>
-            <h3>Finding Peace in a Turbulent World</h3>
-            <p class="video-desc">A classic evangelical teaching on securing lasting peace through faith in Christ.</p>
+            <div class="video-meta"><span>Sermons</span><span>•</span><span>Amazing Media</span></div>
+            <h3>Gospel Sermons & Biblical Teachings</h3>
+            <p class="video-desc">Inspiring, Bible-centered sermons and spiritual messages bringing grace and truth to believers.</p>
+            <a href="https://www.youtube.com/playlist?list=PL8UpeN2AnVrKK6hpy3KYVinJfeEsFP5fv" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-size: 0.84rem; font-weight: 600; margin-top: 10px; display: inline-block;">Open on YouTube &rarr;</a>
           </div>
         </div>
 
-        <!-- Video 6: Tony Evans Sermon -->
-        <div class="video-card" data-category="sermon">
-          <div class="video-thumbnail-wrapper" data-youtube-id="1v_kH88Fh_w">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/1v_kH88Fh_w/mqdefault.jpg" alt="Tony Evans Sermon">
-            <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <div class="video-meta">
-              <span>Sermon</span>
-              <span>•</span>
-              <span>March 2026</span>
-            </div>
-            <h3>Overcoming Anxiety - Dr. Tony Evans</h3>
-            <p class="video-desc">Biblical strategy to overcome daily anxiety, fear, and worry by relying on God's sovereignty.</p>
-          </div>
-        </div>
-
-        <!-- Video 7: Amazing Grace -->
-        <div class="video-card" data-category="choir">
-          <div class="video-thumbnail-wrapper" data-youtube-id="Jbe7OruLk8I">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/Jbe7OruLk8I/mqdefault.jpg" alt="Amazing Grace Hymn">
-            <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <div class="video-meta">
-              <span>Choir</span>
-              <span>•</span>
-              <span>March 2026</span>
-            </div>
-            <h3>Amazing Grace (My Chains Are Gone)</h3>
-            <p class="video-desc">A peaceful vocal hymnal arrangement praising our Savior for releasing our chains.</p>
-          </div>
-        </div>
-
-        <!-- Video 8: I Can Only Imagine -->
-        <div class="video-card" data-category="choir">
-          <div class="video-thumbnail-wrapper" data-youtube-id="YJxRLOKN5I4">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/YJxRLOKN5I4/mqdefault.jpg" alt="Devotional highlights">
-            <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <div class="video-meta">
-              <span>Choir</span>
-              <span>•</span>
-              <span>Feb 2026</span>
-            </div>
-            <h3>I Can Only Imagine - Faith & Reflection</h3>
-            <p class="video-desc">Reflective and prayerful devotion focused on eternal salvation in heaven.</p>
-          </div>
-        </div>
-
-        <!-- Video 9: Oceans Hillsong -->
+        <!-- Playlist 2: Praise & Worship -->
         <div class="video-card" data-category="worship">
-          <div class="video-thumbnail-wrapper" data-youtube-id="dy9nWe9_xRY">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/dy9nWe9_xRY/mqdefault.jpg" alt="Oceans Worship Session">
+          <div class="video-thumbnail-wrapper" data-playlist-id="PL8UpeN2AnVrJg5mXSpOoqFqGcJU_kHdlO">
+            <img class="video-thumbnail" src="assets/images/worship_night.png" alt="Live Praise & Worship Sessions">
             <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
             </div>
+            <span style="position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.8); color: var(--primary); font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-sm);">▶ PLAYLIST</span>
           </div>
           <div class="video-info">
-            <div class="video-meta">
-              <span>Worship</span>
-              <span>•</span>
-              <span>Jan 2026</span>
+            <div class="video-meta"><span>Worship</span><span>•</span><span>Amazing Media</span></div>
+            <h3>Live Praise & Worship Sessions</h3>
+            <p class="video-desc">Spirit-filled worship encounters, live praise sessions, and adoration music from Uganda.</p>
+            <a href="https://www.youtube.com/playlist?list=PL8UpeN2AnVrJg5mXSpOoqFqGcJU_kHdlO" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-size: 0.84rem; font-weight: 600; margin-top: 10px; display: inline-block;">Open on YouTube &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Playlist 3: Bible Studies -->
+        <div class="video-card" data-category="bible-study">
+          <div class="video-thumbnail-wrapper" data-playlist-id="PL8UpeN2AnVrKxK1eIP5MVjbV7BobEljnn">
+            <img class="video-thumbnail" src="assets/images/church_fellowship.png" alt="Bible Studies & Spiritual Growth">
+            <div class="play-overlay">
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
             </div>
-            <h3>Oceans (Where Feet May Fail) - Live</h3>
-            <p class="video-desc">A deep intimate prayer declaring absolute trust in God even in deep waters.</p>
+            <span style="position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.8); color: var(--primary); font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-sm);">▶ PLAYLIST</span>
+          </div>
+          <div class="video-info">
+            <div class="video-meta"><span>Bible Study</span><span>•</span><span>Amazing Media</span></div>
+            <h3>Bible Studies & Spiritual Growth</h3>
+            <p class="video-desc">In-depth Scripture studies, chapter-by-chapter breakdowns, and daily spiritual growth lessons.</p>
+            <a href="https://www.youtube.com/playlist?list=PL8UpeN2AnVrKxK1eIP5MVjbV7BobEljnn" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-size: 0.84rem; font-weight: 600; margin-top: 10px; display: inline-block;">Open on YouTube &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Playlist 4: Choir Music -->
+        <div class="video-card" data-category="choir">
+          <div class="video-thumbnail-wrapper" data-playlist-id="PL8UpeN2AnVrI2_WZpqEvzqa4s7Q4Nxz9x">
+            <img class="video-thumbnail" src="assets/images/choir_singing.png" alt="Choir Performances & Gospel Music">
+            <div class="play-overlay">
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+            <span style="position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.8); color: var(--primary); font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-sm);">▶ PLAYLIST</span>
+          </div>
+          <div class="video-info">
+            <div class="video-meta"><span>Choir</span><span>•</span><span>Amazing Media</span></div>
+            <h3>Choir Performances & Gospel Music</h3>
+            <p class="video-desc">Glorious choir melodies, choral praise, and traditional & modern gospel songs.</p>
+            <a href="https://www.youtube.com/playlist?list=PL8UpeN2AnVrI2_WZpqEvzqa4s7Q4Nxz9x" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-size: 0.84rem; font-weight: 600; margin-top: 10px; display: inline-block;">Open on YouTube &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Playlist 5: Health & Family -->
+        <div class="video-card" data-category="health">
+          <div class="video-thumbnail-wrapper" data-playlist-id="PL8UpeN2AnVrJ_fpN3PYGafjCNQwLO0NtY">
+            <img class="video-thumbnail" src="assets/images/youth_gathering.png" alt="Christian Health & Family Living">
+            <div class="play-overlay">
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+            <span style="position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.8); color: var(--primary); font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-sm);">▶ PLAYLIST</span>
+          </div>
+          <div class="video-info">
+            <div class="video-meta"><span>Health & Family</span><span>•</span><span>Amazing Media</span></div>
+            <h3>Christian Health & Family Living</h3>
+            <p class="video-desc">Practical health wisdom, nutrition guidance, and Christian principles for building strong families.</p>
+            <a href="https://www.youtube.com/playlist?list=PL8UpeN2AnVrJ_fpN3PYGafjCNQwLO0NtY" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-size: 0.84rem; font-weight: 600; margin-top: 10px; display: inline-block;">Open on YouTube &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Playlist 6: Special Conferences -->
+        <div class="video-card" data-category="worship">
+          <div class="video-thumbnail-wrapper" data-playlist-id="PLRgyT3ybs3GQ">
+            <img class="video-thumbnail" src="assets/images/worship_night.png" alt="Special Conferences & Livestreams">
+            <div class="play-overlay">
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+            <span style="position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.8); color: var(--primary); font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-sm);">▶ PLAYLIST</span>
+          </div>
+          <div class="video-info">
+            <div class="video-meta"><span>Conferences</span><span>•</span><span>Gospel Events</span></div>
+            <h3>Special Conferences & Livestreams</h3>
+            <p class="video-desc">Special event broadcasts, ministry conferences, and gospel conventions across East Africa.</p>
+            <a href="https://www.youtube.com/playlist?list=PLRgyT3ybs3GQ" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-size: 0.84rem; font-weight: 600; margin-top: 10px; display: inline-block;">Open on YouTube &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Playlist 7: Outreach -->
+        <div class="video-card" data-category="sermon">
+          <div class="video-thumbnail-wrapper" data-playlist-id="PLO4RXEj9XVko">
+            <img class="video-thumbnail" src="assets/images/community_outreach.png" alt="Evangelism & Community Outreach">
+            <div class="play-overlay">
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+            <span style="position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.8); color: var(--primary); font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-sm);">▶ PLAYLIST</span>
+          </div>
+          <div class="video-info">
+            <div class="video-meta"><span>Outreach</span><span>•</span><span>Missions</span></div>
+            <h3>Evangelism & Community Outreach</h3>
+            <p class="video-desc">Documentaries and field recordings capturing village evangelism, missions, and charity work.</p>
+            <a href="https://www.youtube.com/playlist?list=PLO4RXEj9XVko" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-size: 0.84rem; font-weight: 600; margin-top: 10px; display: inline-block;">Open on YouTube &rarr;</a>
           </div>
         </div>
       </div>

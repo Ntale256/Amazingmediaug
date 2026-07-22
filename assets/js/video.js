@@ -1,4 +1,4 @@
-﻿/* video.js — YouTube Video Modal & Category Filter for Amazing Media Uganda */
+/* video.js — YouTube Video Modal & Category Filter for Amazing Media Uganda */
 
 (function () {
   'use strict';
@@ -25,8 +25,13 @@
     videoCards.forEach(card => {
       card.addEventListener('click', () => {
         const youtubeId = card.getAttribute('data-youtube-id');
-        if (youtubeId) {
-          iframe.src = https://www.youtube.com/embed/?autoplay=1;
+        const playlistId = card.getAttribute('data-playlist-id');
+        if (playlistId) {
+          iframe.src = `https://www.youtube.com/embed/videoseries?list=${playlistId}&autoplay=1`;
+          videoModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        } else if (youtubeId) {
+          iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1`;
           videoModal.classList.add('active');
           document.body.style.overflow = 'hidden';
         }
