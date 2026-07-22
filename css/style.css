@@ -207,15 +207,20 @@ footer .logo:hover .logo-img {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 32px;
+  gap: 22px;
+  align-items: center;
 }
 
 .nav-links a {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--text-secondary);
   padding: 8px 0;
   position: relative;
+  transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .nav-links a:hover,
@@ -223,7 +228,7 @@ footer .logo:hover .logo-img {
   color: #ffffff;
 }
 
-.nav-links a::after {
+.nav-links > li > a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -234,9 +239,75 @@ footer .logo:hover .logo-img {
   transition: width var(--transition-fast);
 }
 
-.nav-links a:hover::after,
-.nav-links a.active::after {
+.nav-links > li > a:hover::after,
+.nav-links > li > a.active::after {
   width: 100%;
+}
+
+/* --- Dropdown Navigation --- */
+.nav-item-dropdown {
+  position: relative;
+}
+
+.caret {
+  font-size: 0.75rem;
+  transition: transform var(--transition-fast);
+  display: inline-block;
+  color: var(--text-muted);
+}
+
+.nav-item-dropdown:hover .caret,
+.nav-item-dropdown.open .caret {
+  transform: rotate(180deg);
+  color: var(--primary);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: rgba(11, 15, 25, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 8px 0;
+  margin-top: 8px;
+  list-style: none;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition-fast);
+  z-index: 200;
+}
+
+.nav-item-dropdown:hover .dropdown-menu,
+.nav-item-dropdown:focus-within .dropdown-menu,
+.nav-item-dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  width: 100%;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(245, 158, 11, 0.12);
+  color: var(--primary);
+  padding-left: 22px;
 }
 
 /* Menu Toggle Button (Mobile) */

@@ -266,28 +266,46 @@ function highlightActiveNavLink() {
 }
 
 /**
- * Filter videos in media grid by category
+ * Filter videos in media grid by category and URL query params
  */
 function setupVideoFiltering() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const videoCards = document.querySelectorAll('#mediaLibraryGrid .video-card');
   if (filterBtns.length === 0 || videoCards.length === 0) return;
 
+  const filterCategory = (filterValue) => {
+    filterBtns.forEach(btn => {
+      if (btn.getAttribute('data-filter') === filterValue) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    videoCards.forEach(card => {
+      const category = card.getAttribute('data-category');
+      if (filterValue === 'all' || category === filterValue) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  };
+
+  // Check URL search parameters (e.g., ?cat=sermon or ?cat=sermons)
+  const urlParams = new URLSearchParams(window.location.search);
+  const catParam = urlParams.get('cat');
+  if (catParam) {
+    let targetFilter = catParam.toLowerCase();
+    if (targetFilter === 'sermons') targetFilter = 'sermon';
+    if (targetFilter === 'bible-studies') targetFilter = 'sermon';
+    filterCategory(targetFilter);
+  }
+
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
       const filterValue = btn.getAttribute('data-filter');
-
-      videoCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filterValue === 'all' || category === filterValue) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
+      filterCategory(filterValue);
     });
   });
 }
