@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amazing Media Uganda | Spreading the Gospel of Jesus Christ</title>
-  <meta name="description" content="Amazing Media Uganda is dedicated to spreading the Gospel of Jesus Christ through digital media, livestreams, uplifting gospel music, events, and community outreach.">
-  
-  <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <meta name="description" content="Amazing Media Uganda is a Christian digital media and broadcasting platform dedicated to sharing the Gospel of Jesus Christ across Uganda, Africa, and beyond.">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
 
@@ -17,517 +16,478 @@
   <header>
     <div class="container navbar">
       <a href="index.html" class="logo" aria-label="Amazing Media Uganda - Home">
-        <img class="logo-img" src="images/logo.svg" alt="Amazing Media Uganda">
+        <img class="logo-img" src="assets/images/logo.svg" alt="Amazing Media Uganda">
       </a>
-      
-      <!-- Mobile Burger Menu -->
       <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
-      
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
-        <li class="nav-item-dropdown">
-          <a href="livestream.html" class="dropdown-toggle">Live TV <span class="caret">▾</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="livestream.html">Current Livestream</a></li>
-          </ul>
-        </li>
-        <li class="nav-item-dropdown">
-          <a href="videos.html" class="dropdown-toggle">Latest Videos <span class="caret">▾</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="videos.html?video=1">Video 1: Praise & Worship</a></li>
-            <li><a href="videos.html?video=2">Video 2: Sunday Sermon</a></li>
-            <li><a href="videos.html?video=3">Video 3: Choir Devotional</a></li>
-          </ul>
-        </li>
-        <li><a href="videos.html?cat=sermons">Sermons</a></li>
-        <li><a href="videos.html?cat=bible-studies">Bible Studies</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="livestream.html">Live</a></li>
         <li><a href="articles.html">Articles</a></li>
+        <li><a href="events.html">Events</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html" class="btn btn-primary" style="padding: 8px 20px;">Donate</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- Hero Banner -->
-  <section class="hero">
-    <div class="container hero-content">
-      <span class="hero-subtitle">Spreading the Gospel of Jesus Christ</span>
-      <h1>Bringing Hope, Faith, & Love to Uganda</h1>
-      <p>Join us in praise, worship, and study as we share the transformative message of God's grace and truth through modern media.</p>
-      <div class="btn-group">
-        <a href="livestream.html" class="btn btn-primary">Watch Live Now</a>
-        <a href="#latest-videos" class="btn btn-secondary">Latest Videos</a>
+  <!-- 1. HERO SECTION (SLIDER) -->
+  <section class="hero-slider">
+    <div class="slide active" style="background-image: url('assets/images/worship_night.png');">
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <div style="max-width: 680px;">
+          <span class="badge badge-gold">Spreading the Gospel Through Digital Media</span>
+          <h1 style="font-size: 3rem; margin: 16px 0; line-height: 1.2;">Bringing Hope, Faith & Love to Every Screen</h1>
+          <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 30px;">Join us in worship, biblical teaching, and community outreach as we share the uncompromised message of Jesus Christ across Uganda and beyond.</p>
+          <div class="btn-group">
+            <a href="livestream.html" class="btn btn-primary">🔴 Watch Live Now</a>
+            <a href="videos.html" class="btn btn-secondary">🎬 Explore Videos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url('assets/images/church_fellowship.png');">
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <div style="max-width: 680px;">
+          <span class="badge">Spiritual Growth & Fellowship</span>
+          <h1 style="font-size: 3rem; margin: 16px 0; line-height: 1.2;">Empowering Believers & Transforming Communities</h1>
+          <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 30px;">Discover inspiring sermons, family programming, and devotionals designed to strengthen your walk with God every single day.</p>
+          <div class="btn-group">
+            <a href="articles.html" class="btn btn-primary">📖 Read Devotionals</a>
+            <a href="events.html" class="btn btn-secondary">📅 Upcoming Events</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url('assets/images/community_outreach.png');">
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <div style="max-width: 680px;">
+          <span class="badge badge-gold">Partner With Us</span>
+          <h1 style="font-size: 3rem; margin: 16px 0; line-height: 1.2;">Using Innovation to Reach Souls for Christ</h1>
+          <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 30px;">Your support fuels broadcast production, community outreach, and gospel music distribution throughout East Africa.</p>
+          <div class="btn-group">
+            <a href="donate.html" class="btn btn-primary">🙏 Partner & Donate</a>
+            <a href="about.html" class="btn btn-secondary">Know Our Vision</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="slider-arrow slider-prev" aria-label="Previous Slide">
+      <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+    </button>
+    <button class="slider-arrow slider-next" aria-label="Next Slide">
+      <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </button>
+    <div class="slider-dots"></div>
+  </section>
+
+  <!-- 2. ABOUT AMAZING MEDIA -->
+  <section class="section">
+    <div class="container grid-2" style="align-items: center; gap: 50px;">
+      <div>
+        <span class="badge">Who We Are</span>
+        <h2 style="font-size: 2.3rem; margin: 12px 0 20px;">Christian Digital Media & Broadcasting Platform</h2>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
+          Based in Kampala, Uganda, <strong>Amazing Media Uganda</strong> exists to inspire hope, strengthen faith, and positively impact lives by creating high-quality, Bible-centered content accessible anywhere, anytime.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;">
+          Through compelling storytelling, worship sessions, biblical teaching, health education, and community outreach, we connect timeless Christian values with today's generation.
+        </p>
+        <div style="background: var(--bg-secondary); padding: 18px 24px; border-left: 4px solid var(--primary); border-radius: var(--radius-sm); margin-bottom: 24px;">
+          <strong style="color: var(--primary); display: block; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Our Motto</strong>
+          <span style="font-size: 1.1rem; font-weight: 700; color: #fff;">Spreading the Gospel Through Digital Media.</span>
+        </div>
+        <a href="about.html" class="btn btn-secondary">Learn More About Us &rarr;</a>
+      </div>
+      <div>
+        <img src="assets/images/bible_study.png" alt="Bible Study and Media Team" style="border-radius: var(--radius-lg); border: 1px solid var(--border-color); width: 100%;">
       </div>
     </div>
   </section>
 
-  <!-- Latest Videos Section -->
-  <section id="latest-videos" class="section">
+  <!-- 3. LATEST VIDEOS -->
+  <section class="section-alt">
     <div class="container">
       <div class="section-header">
-        <span class="badge">Media Gallery</span>
+        <span class="badge badge-gold">Media Library</span>
         <h2>Latest Videos</h2>
-        <p>Watch our recent gospel teachings, praise sessions, and community service highlights.</p>
+        <p>Watch recent worship sessions, powerful sermons, and uplifting gospel music.</p>
       </div>
-      
-      <div class="video-grid">
-        <!-- Video 1: Hillsong What a Beautiful Name -->
+
+      <div class="grid-3">
         <div class="video-card">
           <div class="video-thumbnail-wrapper" data-youtube-id="nQWFzMvCfLE">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/nQWFzMvCfLE/mqdefault.jpg" alt="What a Beautiful Name Worship">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/nQWFzMvCfLE/mqdefault.jpg" alt="What A Beautiful Name Worship Session">
             <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
             </div>
           </div>
           <div class="video-info">
-            <div class="video-meta">
-              <span>Worship</span>
-              <span>•</span>
-              <span>July 2026</span>
-            </div>
+            <div class="video-meta"><span>Worship</span><span>•</span><span>July 2026</span></div>
             <h3>What A Beautiful Name - Worship Session</h3>
-            <p class="video-desc">A powerful time of worship praising the beautiful name of Jesus Christ our Lord.</p>
+            <p class="video-desc">A powerful worship encounter exalting the glorious name of Jesus Christ.</p>
           </div>
         </div>
 
-        <!-- Video 2: Elevation Graves Into Gardens -->
         <div class="video-card">
-          <div class="video-thumbnail-wrapper" data-youtube-id="yRvFvSKFMQs">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/yRvFvSKFMQs/mqdefault.jpg" alt="Graves into Gardens Worship">
+          <div class="video-thumbnail-wrapper" data-youtube-id="xyBJZSBR_pM">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/xyBJZSBR_pM/mqdefault.jpg" alt="Graves Into Gardens">
             <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
             </div>
           </div>
           <div class="video-info">
-            <div class="video-meta">
-              <span>Worship</span>
-              <span>•</span>
-              <span>June 2026</span>
-            </div>
-            <h3>Graves Into Gardens - Live Worship</h3>
-            <p class="video-desc">Declaring God's capability to turn dry bones into armies and graves into gardens.</p>
+            <div class="video-meta"><span>Praise</span><span>•</span><span>July 2026</span></div>
+            <h3>Graves Into Gardens - Praise & Worship</h3>
+            <p class="video-desc">An uplifting live praise session recorded with the Amazing Media Choir.</p>
           </div>
         </div>
 
-        <!-- Video 3: Way Maker -->
         <div class="video-card">
-          <div class="video-thumbnail-wrapper" data-youtube-id="IEXY9aK98jI">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/IEXY9aK98jI/mqdefault.jpg" alt="Way Maker Worship">
+          <div class="video-thumbnail-wrapper" data-youtube-id="4K1q9Ntcr5g">
+            <img class="video-thumbnail" src="https://img.youtube.com/vi/4K1q9Ntcr5g/mqdefault.jpg" alt="The Power of Faith">
             <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
             </div>
           </div>
           <div class="video-info">
-            <div class="video-meta">
-              <span>Worship</span>
-              <span>•</span>
-              <span>May 2026</span>
-            </div>
-            <h3>Way Maker - Praise & Adoration</h3>
-            <p class="video-desc">Singing praise to our God who is our Way Maker, Miracle Worker, and Promise Keeper.</p>
-          </div>
-        </div>
-
-        <!-- Video 4: House of the Lord -->
-        <div class="video-card">
-          <div class="video-thumbnail-wrapper" data-youtube-id="h9gG_HjWUPc">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/h9gG_HjWUPc/mqdefault.jpg" alt="House of the Lord Praise">
-            <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <div class="video-meta">
-              <span>Praise</span>
-              <span>•</span>
-              <span>April 2026</span>
-            </div>
-            <h3>House Of The Lord - Joyful Celebration</h3>
-            <p class="video-desc">There's joy in the house of the Lord! A celebratory song of grace and redemption.</p>
-          </div>
-        </div>
-
-        <!-- Video 5: Amazing Grace -->
-        <div class="video-card">
-          <div class="video-thumbnail-wrapper" data-youtube-id="Jbe7OruLk8I">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/Jbe7OruLk8I/mqdefault.jpg" alt="Amazing Grace Hymn">
-            <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <div class="video-meta">
-              <span>Hymn</span>
-              <span>•</span>
-              <span>March 2026</span>
-            </div>
-            <h3>Amazing Grace (My Chains Are Gone)</h3>
-            <p class="video-desc">A beautiful rendition of the timeless hymn of God's unfathomable mercy.</p>
-          </div>
-        </div>
-
-        <!-- Video 6: I Can Only Imagine -->
-        <div class="video-card">
-          <div class="video-thumbnail-wrapper" data-youtube-id="YJxRLOKN5I4">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/YJxRLOKN5I4/mqdefault.jpg" alt="Sermon highlights">
-            <div class="play-overlay">
-              <div class="play-button">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <div class="video-meta">
-              <span>Devotion</span>
-              <span>•</span>
-              <span>Feb 2026</span>
-            </div>
-            <h3>I Can Only Imagine - Faith & Reflection</h3>
-            <p class="video-desc">Reflecting on what it will be like to stand in the presence of Jesus Christ.</p>
+            <div class="video-meta"><span>Sermon</span><span>•</span><span>June 2026</span></div>
+            <h3>The Power of Faith — Sunday Sermon</h3>
+            <p class="video-desc">Transformative teaching on overcoming doubt and standing firm in God's promises.</p>
           </div>
         </div>
       </div>
-      
-      <div class="text-center" style="margin-top: 40px;">
-        <a href="videos.html" class="btn btn-secondary">View All Videos</a>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="videos.html" class="btn btn-primary">Browse Full Video Library &rarr;</a>
       </div>
     </div>
   </section>
 
-  <!-- Live Stream Section -->
+  <!-- 4. LIVE BROADCAST -->
+  <section class="section">
+    <div class="container" style="background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary)); padding: 48px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+      <div class="grid-2" style="align-items: center; gap: 40px;">
+        <div>
+          <span class="live-indicator"><span class="live-dot"></span> Streaming Live / Online</span>
+          <h2 style="font-size: 2.2rem; margin: 14px 0;">Join Our Online Worship & Fellowship</h2>
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 24px;">Experience spirit-filled live broadcasts of Sunday services, mid-week Bible studies, and special prayer sessions wherever you are.</p>
+          <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px;">
+            <div style="background: var(--bg-primary); padding: 12px 18px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+              <span style="font-size: 0.75rem; color: var(--text-muted); display: block; text-transform: uppercase;">Sunday Main Service</span>
+              <strong style="color: var(--primary);">10:00 AM EAT</strong>
+            </div>
+            <div style="background: var(--bg-primary); padding: 12px 18px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+              <span style="font-size: 0.75rem; color: var(--text-muted); display: block; text-transform: uppercase;">Wednesday Bible Study</span>
+              <strong style="color: var(--primary);">06:00 PM EAT</strong>
+            </div>
+          </div>
+          <a href="livestream.html" class="btn btn-primary">🔴 Go To Live Stream Page</a>
+        </div>
+        <div style="position: relative; aspect-ratio: 16/9; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color);">
+          <img src="assets/images/worship_night.png" alt="Live stream preview" style="width:100%; height:100%; object-fit:cover;">
+          <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.4); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px;">
+            <div style="width: 64px; height: 64px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+              <svg viewBox="0 0 24 24" style="width: 30px; height: 30px; fill: #fff; margin-left: 4px;"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span style="font-weight: 700; color: #fff;">Click to Watch Live Broadcast</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FEATURED SERMON -->
   <section class="section-alt">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-gold">Live Broadcast</span>
-        <h2>Weekly Live Service</h2>
-        <p>Can't make it in person? Tune into our online broadcasting and worship with us from anywhere.</p>
+        <span class="badge">Sermon Spotlight</span>
+        <h2>Featured Teaching</h2>
+        <p>A message to strengthen your spirit and deepen your understanding of God's Word.</p>
       </div>
-      
-      <div class="livestream-container">
-        <div class="livestream-video">
-          <!-- Main Livestream Iframe player (loads a default active video for display) -->
-          <iframe src="https://www.youtube.com/embed/nQWFzMvCfLE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="livestream-details">
-          <div class="live-indicator">
-            <span class="live-dot"></span> Live Schedule
+
+      <div class="grid-2" style="align-items: center; gap: 40px; background: var(--bg-secondary); padding: 36px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+        <div class="video-thumbnail-wrapper" data-youtube-id="Vt9V3BzSQXY" style="border-radius: var(--radius-md);">
+          <img class="video-thumbnail" src="https://img.youtube.com/vi/Vt9V3BzSQXY/mqdefault.jpg" alt="Understanding God's Grace">
+          <div class="play-overlay" style="opacity: 1;">
+            <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
           </div>
-          <h3>Join Our Gatherings</h3>
-          <p>We stream our major services live from Kampala, Uganda. Come and be filled with the Holy Spirit.</p>
-          
-          <ul class="schedule-list">
-            <li class="schedule-item">
-              <span>Sunday Morning Service</span>
-              <span class="schedule-time">09:00 AM EAT</span>
-            </li>
-            <li class="schedule-item">
-              <span>Sunday Celebration Praise</span>
-              <span class="schedule-time">11:30 AM EAT</span>
-            </li>
-            <li class="schedule-item">
-              <span>Wednesday Bible Study</span>
-              <span class="schedule-time">06:00 PM EAT</span>
-            </li>
-            <li class="schedule-item">
-              <span>Friday Night Intercession</span>
-              <span class="schedule-time">08:00 PM EAT</span>
-            </li>
-          </ul>
-          
-          <a href="livestream.html" class="btn btn-primary" style="margin-top: 24px;">Go to Livestream Page</a>
+        </div>
+        <div>
+          <span class="badge badge-gold">Must Watch</span>
+          <h3 style="font-size: 1.8rem; margin: 12px 0; color: #fff;">Understanding God's Grace & Mercy</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px;">In this deep dive into Scripture, we explore how God's grace frees us from condemnation, empowers holy living, and gives us unwavering confidence in Christ Jesus.</p>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px;">Speaker: <strong>Pastor James Ssemwanga</strong> • Duration: <strong>48 mins</strong></p>
+          <a href="videos.html?cat=sermon" class="btn btn-secondary">More Sermons &rarr;</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Upcoming Events Section -->
+  <!-- 6. UPCOMING EVENTS -->
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="badge">Mark Your Calendar</span>
+        <span class="badge badge-gold">Mark Your Calendar</span>
         <h2>Upcoming Events</h2>
-        <p>Get involved, grow in faith, and connect with fellow believers through these upcoming gatherings.</p>
+        <p>Join us in person or online for fellowship, conferences, and evangelistic campaigns.</p>
       </div>
-      
-      <div class="events-list">
-        <!-- Event 1: Sunday Praise -->
+
+      <div class="grid-3">
         <div class="event-card">
-          <div class="event-image-wrapper">
-            <img class="event-image" src="images/worship_night.png" alt="Worship Celebration">
-            <div class="event-date-badge">
-              <span class="event-date-day">26</span>
-              <span class="event-date-month">Jul</span>
-            </div>
+          <div class="event-poster-wrapper">
+            <img class="event-poster" src="assets/images/youth_gathering.png" alt="Youth Evangelism Camp">
+            <div class="event-date-badge"><span class="day">10</span><span class="month">AUG</span></div>
           </div>
-          <div class="event-info">
-            <h3>Youth Praise & Worship Conference</h3>
-            <ul class="event-details-meta">
-              <li>
-                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                02:00 PM - 06:00 PM
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                Amazing Media Center, Kampala
-              </li>
-            </ul>
-            <p class="event-desc">An evening of deep encounter with God, featuring gospel bands, choirs, and youth guest speakers from across East Africa.</p>
-            <a href="events.html" class="btn btn-secondary">Learn More</a>
+          <div class="event-body">
+            <h3>Youth Evangelism Camp 2026</h3>
+            <div class="event-detail">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>KIU Campus, Kampala</span>
+            </div>
+            <div class="event-detail">
+              <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              <span>Pastor James Ssemwanga</span>
+            </div>
+            <a href="events.html" class="btn btn-secondary rsvp-trigger" data-event-name="Youth Evangelism Camp 2026" style="width: 100%; margin-top: 16px; text-align: center;">Register / RSVP &rarr;</a>
           </div>
         </div>
 
-        <!-- Event 2: Youth Seminar -->
         <div class="event-card">
-          <div class="event-image-wrapper">
-            <img class="event-image" src="images/youth_gathering.png" alt="Youth Gathering">
-            <div class="event-date-badge">
-              <span class="event-date-day">08</span>
-              <span class="event-date-month">Aug</span>
-            </div>
+          <div class="event-poster-wrapper">
+            <img class="event-poster" src="assets/images/choir_singing.png" alt="Gospel Music Concert">
+            <div class="event-date-badge"><span class="day">24</span><span class="month">AUG</span></div>
           </div>
-          <div class="event-info">
-            <h3>Youth Leadership & Media Training</h3>
-            <ul class="event-details-meta">
-              <li>
-                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                09:00 AM - 04:00 PM
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                Seminar Room B, Kampala
-              </li>
-            </ul>
-            <p class="event-desc">Equipping the next generation of Christian leaders with media skills to spread the Word of God effectively in the digital age.</p>
-            <a href="events.html" class="btn btn-secondary">Learn More</a>
+          <div class="event-body">
+            <h3>Gospel Music & Praise Night</h3>
+            <div class="event-detail">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Serena Conference Hall</span>
+            </div>
+            <div class="event-detail">
+              <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              <span>Amazing Media Choir & Guests</span>
+            </div>
+            <a href="events.html" class="btn btn-secondary rsvp-trigger" data-event-name="Gospel Music Concert" style="width: 100%; margin-top: 16px; text-align: center;">Register / RSVP &rarr;</a>
           </div>
         </div>
 
-        <!-- Event 3: Outreach -->
         <div class="event-card">
-          <div class="event-image-wrapper">
-            <img class="event-image" src="images/community_outreach.png" alt="Community Charity">
-            <div class="event-date-badge">
-              <span class="event-date-day">15</span>
-              <span class="event-date-month">Aug</span>
-            </div>
+          <div class="event-poster-wrapper">
+            <img class="event-poster" src="assets/images/community_outreach.png" alt="Community Health Fair">
+            <div class="event-date-badge"><span class="day">20</span><span class="month">SEP</span></div>
           </div>
-          <div class="event-info">
-            <h3>Community Outreach & Fellowship</h3>
-            <ul class="event-details-meta">
-              <li>
-                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                08:00 AM - 05:00 PM
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                Kisenyi Community, Kampala
-              </li>
-            </ul>
-            <p class="event-desc">Sharing God's love through practical service: providing free medical checkups, clothing distributions, and gospel sharing.</p>
-            <a href="events.html" class="btn btn-secondary">Learn More</a>
+          <div class="event-body">
+            <h3>Community Health & Wellness Fair</h3>
+            <div class="event-detail">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Nakivubo Grounds, Kampala</span>
+            </div>
+            <div class="event-detail">
+              <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              <span>Dr. Ruth Namukasa</span>
+            </div>
+            <a href="events.html" class="btn btn-secondary rsvp-trigger" data-event-name="Community Health & Wellness Fair" style="width: 100%; margin-top: 16px; text-align: center;">Register / RSVP &rarr;</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Photo Gallery Section -->
+  <!-- 7. LATEST ARTICLES -->
   <section class="section-alt">
     <div class="container">
       <div class="section-header">
-        <span class="badge">Church Life</span>
-        <h2>Photo Gallery</h2>
-        <p>A visual journey of our church family, worship fellowships, community efforts, and celebrations.</p>
+        <span class="badge">News & Devotionals</span>
+        <h2>Latest Articles</h2>
+        <p>Read spiritual reflections, health insights, and ministry updates.</p>
       </div>
-      
+
+      <div class="grid-3">
+        <div class="article-card">
+          <div class="article-img-wrapper">
+            <img class="article-img" src="assets/images/bible_study.png" alt="Devotional">
+            <span class="article-category-tag">Devotional</span>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">July 18, 2026 • By Pastor James</div>
+            <h3>5 Daily Habits Every Christian Should Practice</h3>
+            <p class="article-excerpt">Simple, transformative spiritual disciplines that build an unshakeable prayer life and deep intimacy with God.</p>
+            <a href="articles.html" class="article-read-more">Read Article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrapper">
+            <img class="article-img" src="assets/images/worship_night.png" alt="Digital Evangelism">
+            <span class="article-category-tag">Ministry</span>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">July 14, 2026 • Amazing Media Team</div>
+            <h3>Why Digital Media Is the New Mission Field</h3>
+            <p class="article-excerpt">How modern technology and video production allow us to preach Christ directly into millions of smartphones.</p>
+            <a href="articles.html" class="article-read-more">Read Article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrapper">
+            <img class="article-img" src="assets/images/community_outreach.png" alt="Health">
+            <span class="article-category-tag">Health</span>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">July 10, 2026 • Dr. Ruth Namukasa</div>
+            <h3>Biblical Principles of Nutrition & Wellness</h3>
+            <p class="article-excerpt">Caring for your body as the temple of the Holy Spirit: practical health guidance grounded in Scripture.</p>
+            <a href="articles.html" class="article-read-more">Read Article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. PHOTO GALLERY PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Moments & Memories</span>
+        <h2>Photo Gallery Preview</h2>
+        <p>Snapshots of worship, community fellowship, and outreach in Uganda.</p>
+      </div>
+
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img class="gallery-image" src="images/worship_night.png" alt="Worship night at Kampala Center">
-          <div class="gallery-overlay">
-            <span class="gallery-caption">Worship Night</span>
-          </div>
+          <img class="gallery-image" src="assets/images/worship_night.png" alt="Worship Night">
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
         </div>
         <div class="gallery-item">
-          <img class="gallery-image" src="images/youth_gathering.png" alt="Youth Fellowship Camp">
-          <div class="gallery-overlay">
-            <span class="gallery-caption">Youth Camp</span>
-          </div>
+          <img class="gallery-image" src="assets/images/church_fellowship.png" alt="Church Fellowship">
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
         </div>
         <div class="gallery-item">
-          <img class="gallery-image" src="images/community_outreach.png" alt="Sharing food and resources during community outreach">
-          <div class="gallery-overlay">
-            <span class="gallery-caption">Community Outreach</span>
-          </div>
+          <img class="gallery-image" src="assets/images/choir_singing.png" alt="Choir Singing">
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
         </div>
         <div class="gallery-item">
-          <img class="gallery-image" src="images/bible_study.png" alt="Holy Bible devotion study">
-          <div class="gallery-overlay">
-            <span class="gallery-caption">Holy Bible Devotion</span>
-          </div>
+          <img class="gallery-image" src="assets/images/youth_gathering.png" alt="Youth Gathering">
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
         </div>
         <div class="gallery-item">
-          <img class="gallery-image" src="images/choir_singing.png" alt="Joyful choir singing praise">
-          <div class="gallery-overlay">
-            <span class="gallery-caption">Choir Ministry</span>
-          </div>
+          <img class="gallery-image" src="assets/images/community_outreach.png" alt="Community Outreach">
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
         </div>
         <div class="gallery-item">
-          <img class="gallery-image" src="images/church_fellowship.png" alt="Sunday service warm greetings and fellowship">
-          <div class="gallery-overlay">
-            <span class="gallery-caption">Sunday Fellowship</span>
-          </div>
+          <img class="gallery-image" src="assets/images/bible_study.png" alt="Bible Study">
+          <div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
         </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="gallery.html" class="btn btn-secondary">View Full Photo Gallery &rarr;</a>
       </div>
     </div>
   </section>
 
-  <!-- About Amazing Media Uganda -->
-  <section class="section">
-    <div class="container about-split">
-      <div class="about-text">
-        <span class="badge badge-gold">Who We Are</span>
-        <h3>Sharing Faith & Empowering Communities</h3>
-        <p>Amazing Media Uganda is a Christian media ministry based in Kampala, committed to carrying the glorious message of the Gospel of Jesus Christ to the ends of the earth.</p>
-        <p>Using television, radio, internet livestreaming, and community crusades, we speak truth, hope, and love into the lives of believers and seekers alike. We believe in active service, theological depth, and spiritual freedom.</p>
-        
-        <div class="about-features">
-          <div class="about-feat-item">
-            <div class="about-feat-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-            </div>
-            <div class="about-feat-text">
-              <h4>Faith & Truth</h4>
-              <p>Biblically centered teaching and spiritual guidance.</p>
-            </div>
-          </div>
-          <div class="about-feat-item">
-            <div class="about-feat-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-            </div>
-            <div class="about-feat-text">
-              <h4>Community Love</h4>
-              <p>Practical community outreach, food drives, and care.</p>
-            </div>
-          </div>
-        </div>
-        
-        <a href="about.html" class="btn btn-primary" style="margin-top: 30px;">Read Our Full Story</a>
-      </div>
-      
-      <div class="about-image-wrapper">
-        <img class="about-image" src="images/church_fellowship.png" alt="Amazing Media congregation">
-        <div class="about-badge-overlay">
-          <div class="about-badge-number">10K+</div>
-          <div class="about-badge-label">Lives Touched</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Us Section -->
+  <!-- 9. PARTNER WITH US (STATS) -->
   <section class="section-alt">
     <div class="container">
       <div class="section-header">
-        <span class="badge">Get in Touch</span>
-        <h2>Contact Us</h2>
-        <p>Have questions, prayer requests, or testimonies? Reach out to us. We would love to hear from you.</p>
+        <span class="badge badge-gold">Kingdom Impact</span>
+        <h2>Partnering to Transform Lives</h2>
+        <p>Together, we are making the love and gospel of Jesus Christ accessible to everyone.</p>
       </div>
-      
-      <div class="contact-grid">
-        <div class="contact-info-panel">
-          <!-- Address Card -->
-          <div class="contact-card-item">
-            <div class="contact-card-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            </div>
-            <div class="contact-card-details">
-              <h4>Our Location</h4>
-              <p>Plot 45, Kampala Road, Kampala, Uganda</p>
-            </div>
-          </div>
 
-          <!-- Phone Card -->
-          <div class="contact-card-item">
-            <div class="contact-card-icon">
-              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-            </div>
-            <div class="contact-card-details">
-              <h4>Call Us</h4>
-              <p>+256 700 000 000</p>
-              <p>+256 780 000 000</p>
-            </div>
-          </div>
-
-          <!-- Email Card -->
-          <div class="contact-card-item">
-            <div class="contact-card-icon">
-              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            </div>
-            <div class="contact-card-details">
-              <h4>Email Address</h4>
-              <p>info@amazingmedia.ug</p>
-              <p>prayer@amazingmedia.ug</p>
-            </div>
-          </div>
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Online Viewers</div>
         </div>
-
-        <div class="contact-form-wrapper">
-          <!-- Formspree form is easily configured here by modifying action -->
-          <form id="contactForm" action="https://formspree.io/f/your-formspree-id" method="POST">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Your Name *</label>
-                <input type="text" id="name" name="name" required placeholder="John Doe">
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" required placeholder="john@example.com">
-              </div>
-            </div>
-            
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <select id="subject" name="subject">
-                <option value="General Inquiry">General Inquiry</option>
-                <option value="Prayer Request">Prayer Request</option>
-                <option value="Testimony">Share a Testimony</option>
-                <option value="Partnership">Partnership / Support</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
+        <div class="stat-item">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">Gospel Videos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Community Outreaches</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Christ-Centered</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- 10. DONATE BANNER CTA -->
+  <section class="section">
+    <div class="container" style="background: linear-gradient(135deg, rgba(245,158,11,0.15), rgba(99,102,241,0.15)); padding: 48px; border-radius: var(--radius-lg); border: 1px solid var(--primary); text-align: center;">
+      <span class="badge badge-gold">Support The Gospel</span>
+      <h2 style="font-size: 2.3rem; margin: 16px 0 12px;">Fuel Our Digital Media Ministry</h2>
+      <p style="color: var(--text-secondary); max-width: 650px; margin: 0 auto 28px; font-size: 1.1rem; line-height: 1.7;">
+        Your financial partnership ensures our livestreams, recordings, and outreach programs continue bringing salvation, hope, and healing to communities across Uganda.
+      </p>
+      <div class="btn-group" style="justify-content: center;">
+        <a href="donate.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 14px 32px;">🙏 Donate & Become a Partner</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Partnership Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. QUICK CONTACT STRIP -->
+  <section class="section-alt">
+    <div class="container grid-2" style="align-items: center; gap: 40px;">
+      <div>
+        <span class="badge">We are here for you</span>
+        <h2 style="font-size: 2rem; margin: 12px 0;">Need Prayer or Have a Question?</h2>
+        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 24px;">Our prayer and pastoral team is ready to stand with you. Reach out anytime via email, phone, or by submitting a quick message.</p>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="display: flex; align-items: center; gap: 12px; font-size: 0.95rem;">
+            <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: var(--primary);"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <strong>+256 754 670 935</strong>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px; font-size: 0.95rem;">
+            <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: var(--primary);"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>amazingmediaug@gmail.com</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px; font-size: 0.95rem;">
+            <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: var(--primary);"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Kirinya Bukasa, Wakiso, Uganda</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <form id="contactForm" action="#" style="background: var(--bg-secondary); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <h3 style="margin-bottom: 16px; font-size: 1.2rem;">Send a Prayer Request or Inquiry</h3>
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name *" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email Address *" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Your Message or Prayer Request *" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FOOTER -->
   <footer>
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo" aria-label="Amazing Media Uganda - Home">
-          <img class="logo-img" src="images/logo.svg" alt="Amazing Media Uganda">
-        </a>
+        <a href="index.html" class="logo" aria-label="Amazing Media Uganda - Home"><img class="logo-img" src="assets/images/logo.svg" alt="Amazing Media Uganda"></a>
         <p>Spreading the Gospel of Jesus Christ across Uganda and East Africa using media, technology, and faith.</p>
         <div class="social-links">
           <a href="https://www.facebook.com/AmazingMediaUgOfficial" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
@@ -536,37 +496,36 @@
           <a href="https://www.youtube.com/c/AmazingMediaUganda" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.06v1.74c0 .57-.03 1.26-.1 2.06-.06.8-.15 1.43-.28 1.9-.17.6-.47 1.05-.87 1.37-.4.32-.93.52-1.6.61-.8.1-1.89.16-3.27.18-1.38.03-2.65.04-3.82.04h-1.6c-1.17 0-2.44-.01-3.82-.04-1.38-.02-2.47-.08-3.27-.18-.67-.09-1.2-.29-1.6-.61-.4-.32-.7-.77-.87-1.37-.13-.47-.22-1.1-.28-1.9-.06-.8-.1-1.49-.1-2.06v-1.74c0-.57.04-1.26.1-2.06.06-.8.15-1.43.28-1.9.17-.6.47-1.05.87-1.37.4-.32.93-.52 1.6-.61.8-.1 1.89-.16 3.27-.18C8.94 5.03 10.21 5 11.38 5h1.6c1.17 0 2.44.01 3.82.04 1.38.02 2.47.08 3.27.18.67.09 1.2.29 1.6.61.4.32.7.77.87 1.37z"/></svg>
           </a>
-          <a href="#" class="social-icon" aria-label="Instagram">
-            <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m8.4 2.25a.75.75 0 0 1 .75.75.75.75 0 0 1-.75.75.75.75 0 0 1-.75-.75.75.75 0 0 1 .75-.75M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
-          </a>
-          <a href="#" class="social-icon" aria-label="Twitter">
-            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <a href="#" class="social-icon" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.77 1.52V6.76a4.85 4.85 0 01-1-.07z"/></svg>
           </a>
         </div>
       </div>
 
       <div class="footer-nav">
-        <h4>Sitemap Navigation</h4>
+        <h4>Quick Links</h4>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="livestream.html">Live TV & Broadcast</a></li>
-          <li><a href="videos.html">Latest Videos</a></li>
-          <li><a href="videos.html?cat=sermons">Sermons</a></li>
-          <li><a href="videos.html?cat=bible-studies">Bible Studies</a></li>
-          <li><a href="articles.html">Articles & Devotionals</a></li>
-          <li><a href="gallery.html">Photo & Media Gallery</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="livestream.html">Live Broadcast</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donate.html">Donate</a></li>
         </ul>
       </div>
 
       <div class="footer-nav">
         <h4>Ministries</h4>
         <ul class="footer-links">
-          <li><a href="videos.html">Sermons & Media</a></li>
-          <li><a href="events.html">Youth Fellowship</a></li>
+          <li><a href="videos.html?cat=sermon">Sermons & Teaching</a></li>
+          <li><a href="videos.html?cat=worship">Gospel Music</a></li>
+          <li><a href="videos.html?cat=bible-study">Bible Studies</a></li>
+          <li><a href="videos.html?cat=health">Health & Wellness</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
           <li><a href="about.html">Statement of Faith</a></li>
-          <li><a href="contact.html">Prayer Support</a></li>
-          <li><a href="events.html">Outreach Projects</a></li>
         </ul>
       </div>
 
@@ -575,17 +534,25 @@
         <ul class="footer-contact-info">
           <li>
             <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            Plot 45, Kampala Road,<br>Kampala, Uganda
+            Kirinya Bukasa, Wakiso, Uganda
           </li>
           <li>
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-            +256 700 000 000
+            +256 754 670 935
           </li>
           <li>
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            info@amazingmedia.ug
+            amazingmediaug@gmail.com
           </li>
         </ul>
+        <div class="newsletter-strip" style="margin-top: 24px; padding: 24px; border-radius: var(--radius-md);">
+          <h3 style="font-size: 1rem; margin-bottom: 6px;">Newsletter</h3>
+          <p style="font-size: 0.84rem; margin-bottom: 14px;">Get weekly devotionals in your inbox.</p>
+          <form class="newsletter-form" action="#" style="flex-direction: column; gap: 8px;">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary" style="border-radius: var(--radius-full);">Subscribe</button>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -598,8 +565,11 @@
     </div>
   </footer>
 
-  <!-- Main JavaScript Links -->
-  <script src="js/menu.js"></script>
-  <script src="js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

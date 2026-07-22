@@ -1,0 +1,6 @@
+﻿[
+  { "id": 1, "name": "Pastor James Ssemwanga", "role": "Founder & Lead Pastor", "bio": "Pastor James founded Amazing Media Uganda with a passion to use modern technology to spread the Gospel. He brings over 15 years of pastoral ministry experience.", "photo": "assets/images/team/pastor_james.jpg", "email": "pastor@amazingmedia.ug" },
+  { "id": 2, "name": "Sarah Nakato", "role": "Media & Technical Director", "bio": "Sarah leads all broadcasting, livestreaming, and digital production operations. She is passionate about connecting technology and worship.", "photo": "assets/images/team/sarah.jpg", "email": "media@amazingmedia.ug" },
+  { "id": 3, "name": "David Mutebi", "role": "Worship Leader & Creative Director", "bio": "David leads our praise ministries and oversees all gospel music production, ensuring every note glorifies Christ.", "photo": "assets/images/team/david.jpg", "email": "worship@amazingmedia.ug" },
+  { "id": 4, "name": "Dr. Ruth Namukasa", "role": "Health & Community Programs", "bio": "Dr. Ruth leads our health education and community outreach initiatives, promoting holistic wellness rooted in Biblical principles.", "photo": "assets/images/team/ruth.jpg", "email": "health@amazingmedia.ug" }
+]

@@ -7,9 +7,10 @@
   <meta name="description" content="Check our upcoming events calendar, including youth conferences, media workshops, community charity work, and praise services.">
   
   <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
   <style>
     .page-header {
       padding: 100px 0 60px 0;
@@ -66,7 +67,7 @@
   <!-- Header Navigation -->
   <header>
     <div class="container navbar">
-      <a href="index.html" class="logo" aria-label="Amazing Media Uganda - Home"><img class="logo-img" src="images/logo.svg" alt="Amazing Media Uganda"></a>
+      <a href="index.html" class="logo" aria-label="Amazing Media Uganda - Home"><img class="logo-img" src="assets/images/logo.svg" alt="Amazing Media Uganda"></a>
       
       <!-- Mobile Burger Menu -->
       <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -75,13 +76,17 @@
         <span></span>
       </button>
       
-      <ul class="nav-links">
+            <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li class="nav-item-dropdown">
-          <a href="livestream.html" class="dropdown-toggle">Live TV <span class="caret">▾</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="livestream.html">Current Livestream</a></li>
-          </ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="livestream.html">Live</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donate.html" class="btn btn-primary" style="padding: 8px 20px;">Donate</a></li>
+      </ul>
         </li>
         <li class="nav-item-dropdown">
           <a href="videos.html" class="dropdown-toggle">Latest Videos <span class="caret">▾</span></a>
@@ -116,7 +121,7 @@
         <!-- Event 1 -->
         <div class="event-card">
           <div class="event-image-wrapper">
-            <img class="event-image" src="images/worship_night.png" alt="Worship Celebration">
+            <img class="event-image" src="assets/images/worship_night.png" alt="Worship Celebration">
             <div class="event-date-badge">
               <span class="event-date-day">26</span>
               <span class="event-date-month">Jul</span>
@@ -143,7 +148,7 @@
         <!-- Event 2 -->
         <div class="event-card">
           <div class="event-image-wrapper">
-            <img class="event-image" src="images/youth_gathering.png" alt="Youth Gathering">
+            <img class="event-image" src="assets/images/youth_gathering.png" alt="Youth Gathering">
             <div class="event-date-badge">
               <span class="event-date-day">08</span>
               <span class="event-date-month">Aug</span>
@@ -170,7 +175,7 @@
         <!-- Event 3 -->
         <div class="event-card">
           <div class="event-image-wrapper">
-            <img class="event-image" src="images/community_outreach.png" alt="Community Charity">
+            <img class="event-image" src="assets/images/community_outreach.png" alt="Community Charity">
             <div class="event-date-badge">
               <span class="event-date-day">15</span>
               <span class="event-date-month">Aug</span>
@@ -197,7 +202,7 @@
         <!-- Event 4 -->
         <div class="event-card">
           <div class="event-image-wrapper">
-            <img class="event-image" src="images/choir_singing.png" alt="Choir Praise Night">
+            <img class="event-image" src="assets/images/choir_singing.png" alt="Choir Praise Night">
             <div class="event-date-badge">
               <span class="event-date-day">30</span>
               <span class="event-date-month">Aug</span>
@@ -279,7 +284,7 @@
   <footer>
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo" aria-label="Amazing Media Uganda - Home"><img class="logo-img" src="images/logo.svg" alt="Amazing Media Uganda"></a>
+        <a href="index.html" class="logo" aria-label="Amazing Media Uganda - Home"><img class="logo-img" src="assets/images/logo.svg" alt="Amazing Media Uganda"></a>
         <p>Spreading the Gospel of Jesus Christ across Uganda and East Africa using media, technology, and faith.</p>
         <div class="social-links">
           <a href="https://www.facebook.com/AmazingMediaUgOfficial" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
@@ -297,17 +302,18 @@
         </div>
       </div>
 
-      <div class="footer-nav">
-        <h4>Sitemap Navigation</h4>
+            <div class="footer-nav">
+        <h4>Quick Links</h4>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="livestream.html">Live TV & Broadcast</a></li>
-          <li><a href="videos.html">Latest Videos</a></li>
-          <li><a href="videos.html?cat=sermons">Sermons</a></li>
-          <li><a href="videos.html?cat=bible-studies">Bible Studies</a></li>
-          <li><a href="articles.html">Articles & Devotionals</a></li>
-          <li><a href="gallery.html">Photo & Media Gallery</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="livestream.html">Live Broadcast</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donate.html">Donate</a></li>
         </ul>
       </div>
 
@@ -351,8 +357,12 @@
   </footer>
 
   <!-- Main JavaScript Links -->
-  <script src="js/menu.js"></script>
-  <script src="js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
 
