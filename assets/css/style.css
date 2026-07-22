@@ -207,20 +207,19 @@ footer .logo:hover .logo-img {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 22px;
+  gap: 18px;
   align-items: center;
 }
 
 .nav-links a {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 500;
   color: var(--text-secondary);
-  padding: 8px 0;
+  padding: 6px 0;
   position: relative;
   transition: color var(--transition-fast);
   display: inline-flex;
   align-items: center;
-  gap: 4px;
 }
 
 .nav-links a:hover,
@@ -228,7 +227,7 @@ footer .logo:hover .logo-img {
   color: #ffffff;
 }
 
-.nav-links > li > a::after {
+.nav-links > li > a:not(.btn)::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -239,9 +238,16 @@ footer .logo:hover .logo-img {
   transition: width var(--transition-fast);
 }
 
-.nav-links > li > a:hover::after,
-.nav-links > li > a.active::after {
+.nav-links > li > a:not(.btn):hover::after,
+.nav-links > li > a:not(.btn).active::after {
   width: 100%;
+}
+
+.nav-links .btn {
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 /* --- Dropdown Navigation --- */
